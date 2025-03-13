@@ -17,7 +17,7 @@ This lab focuses on the use of ultrasonic sensors for object detection and dista
 Before starting the lab, an overview of the TB6612FNG breakout should be covered. The TB6612FNG breakout board features three types of pins: power, input, and output, all clearly labeled on the back of the board. The power pins include VM for motor voltage (2.2V to 13.5V), VCC for logic voltage (2.7V to 5.5V), and GND for the common ground. Input pins consist of STBY for enabling the H-bridges, AIN1/BIN1 and AIN2/BIN2 for determining motor direction, and PWMA/PWMB for controlling motor speed via PWM signals. Output pins, A01/B01 and A02/B02, are used to connect the motors. This configuration allows for efficient control of motor direction and speed using the Arduino.
 
 <p align="center">
-  <img src="https://github.com/faco229/Lab-6-Report/blob/main/Fig1_Bridge%20Motor.jpg" width="500">
+  <img src="https://github.com/faco229/Lab-6-Report/blob/main/Fig1_Bridge%20Motor.jpg" width="300">
   <br>
   <b>Figure 1:</b> Photo of Dual TB6612FNG H-Bridge Motor (https://market.samm.com/sparkfun-motordriver-dual-tb6612fng-with-headers)
 </p>
@@ -147,10 +147,14 @@ The results of this lab should be demonstrated to the instructor. In addition, t
 ---
 
 ## Conclusion
+In this lab, we successfully demonstrated the integration of ultrasonic sensors and motor drivers to enable object detection and obstacle avoidance in a mobile robot. Through the experiments, we tested the precision and resolution of the ultrasonic sensor, confirming its ability to detect subtle changes in distance and identify limitations in sensor accuracy at greater distances. We also developed and tested code to relay distance data through serial communication and blended this feedback into a motion control system. This allowed the robot to interpret distance measurements and respond, stopping when an object was detected within 10 cm.
+
+Additionally, we gained hands-on experience with the TB6612FNG motor driver and learned how to manipulate motor direction and speed through pulse width modulation (PWM). By programming various movement commands and establishing minimum speed thresholds, we were able to control the motion with precision. This lab not only reinforced foundational concepts in sensor technology and motor control but also illustrated the practical applications of these components in real-world robotics systems, such as collision prevention mechanisms in vehicles.
 
 
 
 **Citations**
+
 Copilot. (2025). Introduction to Ultrasonic Sensors and Actuators in Robotics. Retrieved from [Quinn’s with Copilot].
 
 Copilot. (2025). Board Overview of TB6612FNG Breakout. Retrieved from [Quinn’s conversation with Copilot].
